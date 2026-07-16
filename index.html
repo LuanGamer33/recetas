@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tus Recetas con Amor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Dancing+Script:wght@700&family=Yanone+Kaffeesatz:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="logo">TUS RECETAS CON <span class="logo-script">Amor</span></div>
+        <ul class="nav-links">
+            <li><a href="#inicio" class="nav-item active">Inicio</a></li>
+            <li><a href="#recetas" class="nav-item">Recetas</a></li>
+            <li><a href="#mis-recetas" class="nav-item">Mis Recetas</a></li>
+            <li><a href="#conversion" class="nav-item">Conversión</a></li>
+            <li><a href="#contactos" class="nav-item">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header id="inicio" class="hero">
+      <div class="hero-content">
+        <h1>BIENVENIDO A<br>TUS RECETAS CON <span class="title-script">Amor</span></h1>
+        <p>Aquí el ingrediente secreto siempre es el cariño. Pasa, ponte el delantal y horneemos algo especial hoy.</p>
+      </div>
+    </header>
+
+    <section class="about-section">
+      <div class="about-content">
+        <p>Tus Recetas con Amor nace para demostrar que no necesitas ser un chef profesional para crear magia en la cocina. Mi misión es acompañarte paso a paso para que cada postre que prepares sea un regalo para los sentidos y un abrazo para quienes más quieres.</p>
+      </div>
+    </section>
+
+    <section id="recetas" class="recipes-section">
+      <div class="recipes-header-container">
+        <h2>Nuestras Recetas</h2>
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" id="recipe-search" placeholder="Buscar recetas por nombre o ingrediente...">
+        </div>
+      </div>
+      <div class="recipes-grid">
+        <div class="recipe-card" data-id="1">
+          <div class="recipe-image img-brownie"></div>
+          <div class="recipe-info">
+            <h3>Brownie</h3>
+            <p>El pecado favorito de los amantes del chocolate: intenso, húmedo y con esa costrita crujiente que enamora.</p>
+          </div>
+        </div>
+        <div class="recipe-card" data-id="2">
+          <div class="recipe-image img-bizcocho"></div>
+          <div class="recipe-info">
+            <h3>Bizcocho</h3>
+            <p>La esencia de la merienda casera; una nube esponjosa con aroma a vainilla y recuerdos de infancia.</p>
+          </div>
+        </div>
+        <div class="recipe-card" data-id="3">
+          <div class="recipe-image img-donas"></div>
+          <div class="recipe-info">
+            <h3>Mini Donas</h3>
+            <p>Pequeños bocados de felicidad horneados con amor, perfectos para compartir y decorar a tu gusto.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="modal-1" class="modal">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Cerrar modal">&times;</button>
+        <div class="modal-body">
+          <div class="modal-col-left">
+            <div class="modal-image img-brownie" style="height: 250px; border-radius: 15px; background-size: cover; background-position: center; margin-bottom: 1.5rem;"></div>
+            <h2>Brownie</h2>
+            <p class="modal-desc">El pecado favorito de los amantes del chocolate: intenso, húmedo y con esa costrita crujiente que enamora.</p>
+          </div>
+          <div class="modal-col-middle">
+            <h3>Ingredientes</h3>
+            <ul class="ingredients-list">
+              <li>200gr Chocolate negro (70% cacao)</li>
+              <li>110gr Mantequilla sin sal</li>
+              <li>3 Huevos grandes</li>
+              <li>100gr Azúcar blanca</li>
+              <li>100gr Azúcar moreno</li>
+              <li>85gr Harina de trigo todo uso</li>
+              <li>20gr Cacao puro en polvo</li>
+              <li>1 cdta de sal en escamas</li>
+            </ul>
+          </div>
+          <div class="modal-col-right">
+            <h3>Preparación</h3>
+            <ol class="instructions-list">
+              <li>Higienizar el área y precalentar el horno.</li>
+              <li>Fundir el chocolate junto con la mantequilla a baño maría o en el microondas en intervalos cortos.</li>
+              <li>Batir los huevos con ambos azúcares durante unos 5 minutos hasta que espumen y aclaren un poco su color.</li>
+              <li>Incorporar la mezcla de chocolate derretido y batir suavemente.</li>
+              <li>Añadir la harina y el cacao tamizados, integrando con espátula y movimientos envolventes.</li>
+              <li>Verter en un molde cuadrado con papel encerado y hornear.</li>
+            </ol>
+          </div>
+        </div>
+        
+        <div class="modal-footer-info">
+          <div class="info-box box-time">
+            <div class="info-icon">
+              <i class="fa-regular fa-clock" style="font-size: 2.2rem; color: #462c22;"></i>
+            </div>
+            <div class="info-text">
+              <p>Temperatura de preparación: <span>175°C</span></p>
+              <p>Duración: <span>25-30 minutos</span></p>
+              <p>aproximadamente</p>
+            </div>
+          </div>
+          <div class="info-box box-tip">
+            <div class="info-icon tip-icon">
+              <i class="fa-regular fa-heart" style="font-size: 2.5rem; color: #462c22;"></i>
+            </div>
+            <div class="info-text">
+              <p><strong>El toque de amor:</strong> <span>Para un centro extra jugoso, saca el brownie del horno cuando al insertar un palillo en el centro, éste salga ligeramente húmedo con migas pegadas.</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-2" class="modal">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Cerrar modal">&times;</button>
+        <div class="modal-body">
+          <div class="modal-col-left">
+            <div class="modal-image img-bizcocho" style="height: 250px; border-radius: 15px; background-size: cover; background-position: center; margin-bottom: 1.5rem;"></div>
+            <h2>Bizcocho</h2>
+            <p class="modal-desc">La esencia de la merienda casera; una nube esponjosa con aroma a vainilla y recuerdos de infancia.</p>
+          </div>
+          <div class="modal-col-middle">
+            <h3>Ingredientes</h3>
+            <ul class="ingredients-list">
+              <li>120gr Azúcar</li>
+              <li>120gr Harina de trigo todo uso</li>
+              <li>4 Huevos</li>
+              <li>1cdta Polvo de hornear</li>
+              <li>1cda Vainilla</li>
+              <li>Papel encerado</li>
+              <li>Molde 20cm de diámetro</li>
+            </ul>
+          </div>
+          <div class="modal-col-right">
+            <h3>Preparación</h3>
+            <ol class="instructions-list">
+               <li>Higienizar el área</li>
+               <li>Emulsionar los huevos, al notar que van duplicando su volumen se debe incorporar el azúcar en forma de lluvia, incorporar la vainilla.</li>
+               <li>Se debe batir hasta obtener el punto de letra, en este momento proceder a integrar con la espatula y movimiento envolventes la harina cernida en tres momentos.</li>
+            </ol>
+          </div>
+        </div>
+        
+        <div class="modal-footer-info">
+          <div class="info-box box-time">
+            <div class="info-icon">
+              <i class="fa-regular fa-clock" style="font-size: 2.2rem; color: #462c22;"></i>
+            </div>
+            <div class="info-text">
+              <p>Temperatura de preparación: <span>180°C</span></p>
+              <p>Duración: <span>15-20 minutos</span></p>
+              <p>aproximadamente</p>
+            </div>
+          </div>
+          <div class="info-box box-tip">
+            <div class="info-icon tip-icon">
+              <i class="fa-regular fa-heart" style="font-size: 2.5rem; color: #462c22;"></i>
+            </div>
+            <div class="info-text">
+              <p><strong>El toque de amor:</strong> <span>Ralla un poco de limón o naranja fresca para darle ese aroma cítrico que perfumará toda tu cocina.</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-3" class="modal">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Cerrar modal">&times;</button>
+        <div class="modal-body">
+          <div class="modal-col-left">
+            <div class="modal-image img-donas" style="height: 250px; border-radius: 15px; background-size: cover; background-position: center; margin-bottom: 1.5rem;"></div>
+            <h2>Mini Donas</h2>
+            <p class="modal-desc">Pequeños bocados de felicidad horneados con amor, perfectos para compartir y decorar a tu gusto.</p>
+          </div>
+          <div class="modal-col-middle">
+            <h3>Ingredientes</h3>
+            <ul class="ingredients-list">
+              <li>150gr Harina de trigo todo uso</li>
+              <li>100gr Azúcar</li>
+              <li>1 cdta Polvo de hornear</li>
+              <li>1 pizca de nuez moscada</li>
+              <li>1 Huevo</li>
+              <li>120ml Leche entera</li>
+              <li>30gr Mantequilla derretida</li>
+              <li>1 cdta Vainilla</li>
+            </ul>
+          </div>
+          <div class="modal-col-right">
+            <h3>Preparación</h3>
+            <ol class="instructions-list">
+              <li>Higienizar el área y engrasar el molde especial para mini donas.</li>
+              <li>En un bol grande, mezclar la harina, el azúcar, el polvo de hornear y la nuez moscada.</li>
+              <li>En otro bol, batir ligeramente el huevo e incorporar la leche, la mantequilla derretida y la vainilla.</li>
+              <li>Verter los ingredientes líquidos sobre los secos y mezclar suavemente hasta que no queden grumos. No sobrebatir.</li>
+              <li>Llenar las cavidades del molde hasta 3/4 de su capacidad (usar manga pastelera facilita el proceso).</li>
+              <li>Hornear hasta que al presionarlas suavemente, regresen a su forma.</li>
+            </ol>
+          </div>
+        </div>
+        
+        <div class="modal-footer-info">
+          <div class="info-box box-time">
+            <div class="info-icon">
+              <i class="fa-regular fa-clock" style="font-size: 2.2rem; color: #462c22;"></i>
+            </div>
+            <div class="info-text">
+              <p>Temperatura de preparación: <span>170°C</span></p>
+              <p>Duración: <span>8-10 minutos</span></p>
+              <p>aproximadamente</p>
+            </div>
+          </div>
+          <div class="info-box box-tip">
+            <div class="info-icon tip-icon">
+              <i class="fa-regular fa-heart" style="font-size: 2.5rem; color: #462c22;"></i>
+            </div>
+            <div class="info-text">
+              <p><strong>El toque de amor:</strong> <span>Báñalas en chocolate fundido y espolvorea chispas de colores inmediatamente para que se adhieran bien antes de que el chocolate se seque.</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="mis-recetas" class="custom-recipes-section">
+      <div class="custom-recipes-container">
+        <div class="custom-recipes-header">
+          <h2>Mis Creaciones con Amor</h2>
+          <p>Agrega, consulta y elimina tus propias recetas almacenadas en nuestra base de datos SQLite.</p>
+        </div>
+        
+        <div class="custom-recipes-layout">
+          <div class="recipe-form-container">
+            <h3>Agregar Nueva Receta</h3>
+            <form id="add-recipe-form">
+              <div class="form-group">
+                <label for="recipe-title">Título de la receta</label>
+                <input type="text" id="recipe-title" required placeholder="Ej. Tarta de Fresa">
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="recipe-time">Tiempo de Prep. (min)</label>
+                  <input type="text" id="recipe-time" placeholder="Ej. 45">
+                </div>
+                <div class="form-group">
+                  <label for="recipe-temp">Temp. Horno (°C)</label>
+                  <input type="text" id="recipe-temp" placeholder="Ej. 180">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="recipe-ingredients">Ingredientes (uno por línea)</label>
+                <textarea id="recipe-ingredients" rows="4" required placeholder="Ej.&#10;200g Harina&#10;2 Huevos&#10;100g Mantequilla"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="recipe-instructions">Preparación (paso a paso)</label>
+                <textarea id="recipe-instructions" rows="4" required placeholder="Ej.&#10;1. Mezclar ingredientes secos.&#10;2. Añadir líquidos.&#10;3. Hornear."></textarea>
+              </div>
+              <div class="form-group">
+                <label for="recipe-tip">El toque de amor (consejo)</label>
+                <input type="text" id="recipe-tip" placeholder="Ej. Espolvorear azúcar glass al servir">
+              </div>
+              <button type="submit" class="btn-submit">Guardar en SQLite</button>
+            </form>
+          </div>
+          
+          <div class="custom-recipes-list-col">
+            <h3>Recetas Guardadas en BD</h3>
+            <div id="custom-recipes-list" class="custom-recipes-grid">
+              <!-- Cargado dinámicamente -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="modal-custom" class="modal">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Cerrar modal">&times;</button>
+        <div class="modal-body">
+          <div class="modal-col-left">
+            <div class="modal-image img-custom-placeholder" style="height: 250px; border-radius: 15px; background: #66453A; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+              <i class="fa-solid fa-utensils" style="font-size: 5rem; color: #FDFCEE; opacity: 0.6;"></i>
+            </div>
+            <h2 id="custom-modal-title">Cargando...</h2>
+            <p class="modal-desc" id="custom-modal-desc">Receta personalizada con mucho cariño.</p>
+          </div>
+          <div class="modal-col-middle">
+            <h3>Ingredientes</h3>
+            <ul class="ingredients-list" id="custom-modal-ingredients">
+              <!-- Dinámico -->
+            </ul>
+          </div>
+          <div class="modal-col-right">
+            <h3>Preparación</h3>
+            <ol class="instructions-list" id="custom-modal-instructions">
+              <!-- Dinámico -->
+            </ol>
+          </div>
+        </div>
+        
+        <div class="modal-footer-info">
+          <div class="info-box box-time">
+            <div class="info-icon">
+              <i class="fa-regular fa-clock" style="font-size: 2.2rem; color: #462c22;"></i>
+            </div>
+            <div class="info-text">
+              <p>Temperatura de preparación: <span id="custom-modal-temp">-</span></p>
+              <p>Duración: <span id="custom-modal-time">-</span></p>
+            </div>
+          </div>
+          <div class="info-box box-tip">
+            <div class="info-icon tip-icon">
+              <i class="fa-regular fa-heart" style="font-size: 2.5rem; color: #462c22;"></i>
+            </div>
+            <div class="info-text">
+              <p><strong>El toque de amor:</strong> <span id="custom-modal-tip">-</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="conversion" class="conversion-section">
+      <div class="conversion-header">
+        <h2>Para que el amor salga exacto: Guía de Medidas</h2>
+      </div>
+      <div class="conversion-container">
+        <div class="conversion-layout">
+          
+          <div class="conversion-info-col">
+            <table class="conversion-table">
+              <thead>
+                <tr>
+                  <th>Unidad</th>
+                  <th>Tazas</th>
+                  <th>Métrica</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Cucharadita (cdta)</td>
+                  <td>1/45 taza</td>
+                  <td>5ml / 5g</td>
+                </tr>
+                <tr>
+                  <td>Cucharada (cda)</td>
+                  <td>1/16 taza</td>
+                  <td>15ml / 15g</td>
+                </tr>
+                <tr>
+                  <td>Taza estandar (taza)</td>
+                  <td>1 taza</td>
+                  <td>240ml / 200g</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="converter-card">
+            <div class="converter-card-body">
+              <div class="converter-card-left">
+                <h3>Calculadora de Medidas Inteligente</h3>
+                <p class="converter-subtitle">Selecciona una receta para ver sus ingredientes y convertirlos en gotas de amor.</p>
+                
+                <div class="converter-controls">
+                  <div class="control-group">
+                    <label for="recipe-select"><i class="fa-solid fa-utensils"></i> Receta:</label>
+                    <select id="recipe-select">
+                      <option value="52860" selected>Brownie</option>
+                      <option value="52900">Bizcocho</option>
+                      <option value="53393">Mini Donas</option>
+                    </select>
+                  </div>
+                  
+                  <div class="control-group">
+                    <label for="unit-select"><i class="fa-solid fa-scale-balanced"></i> Convertir a:</label>
+                    <select id="unit-select">
+                      <option value="metric" selected>Métrico (g/ml)</option>
+                      <option value="cups">Tazas / Cucharadas</option>
+                      <option value="ounces">Onzas (oz / fl oz)</option>
+                    </select>
+                  </div>
+                  
+                  <div class="control-group">
+                    <label for="portion-select"><i class="fa-solid fa-users"></i> Porciones:</label>
+                    <select id="portion-select">
+                      <option value="0.5">Media Receta (0.5x)</option>
+                      <option value="1" selected>Estándar (1x)</option>
+                      <option value="1.5">Receta y Media (1.5x)</option>
+                      <option value="2">Doble Receta (2x)</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="converter-card-right">
+                <div class="converter-result">
+                  <div id="converter-loading" class="converter-loading">
+                    <i class="fa-solid fa-spinner fa-spin"></i> Cargando ingredientes desde TheMealDB...
+                  </div>
+                  <div id="converter-content" class="converter-content" style="display: none;">
+                    <div class="recipe-api-header">
+                      <img id="recipe-api-img" src="" alt="Receta" class="recipe-api-thumb">
+                      <h4 id="recipe-api-title">Cargando...</h4>
+                    </div>
+                    <ul id="converted-ingredients-list" class="converted-list">
+                      
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contactos" class="footer">
+      <div class="footer-container">
+        <div class="footer-col col-brand">
+          <div class="logo">TUS RECETAS CON <span class="logo-script">Amor</span></div>
+          <p>Compartiendo la magia de la repostería casera desde el corazón. Aquí, cada receta es un pretexto para crear recuerdos dulces y momentos inolvidables en familia.</p>
+        </div>
+        
+        <div class="footer-col col-social">
+          <h3>Síguenos en Redes</h3>
+          <p>Comparte tus creaciones usando<br>el hashtag #HechoConAmor</p>
+          <div class="social-icons">
+            <a href="#" class="icon-social" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="icon-social" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="icon-social" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-col col-copy">
+          <p>&copy; <strong>2026 TUS RECETAS CON <span class="logo-script" style="font-size:1.2rem;">Amor</span></strong></p>
+          <p>Todos los derechos reservados.</p>
+          <br>
+          <p>Hecho con azúcar, harina y mucho cariño.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
