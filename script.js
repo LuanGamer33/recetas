@@ -464,8 +464,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // --- Integración con Supabase (PostgreSQL en la Nube) ---
   // Reemplaza estas credenciales con las de tu proyecto en el panel de Supabase
-  const SUPABASE_URL = 'TU_SUPABASE_URL';
-  const SUPABASE_ANON_KEY = 'TU_SUPABASE_ANON_KEY';
+  const SUPABASE_URL = 'https://pwlscfffczfkdzapekto.supabase.co';
+  const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InB3bHNjZmZmY3pma2R6YXBla3RvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQxNjcwMTgsImV4cCI6MjA5OTc0MzAxOH0.We--QMux31kf5ug2yamKHKTsDzQlWyYJOqG-CJB2RLE';
 
   let supabaseClient = null;
   if (typeof supabase !== 'undefined' && SUPABASE_URL !== 'TU_SUPABASE_URL') {
