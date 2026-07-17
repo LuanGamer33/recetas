@@ -46,21 +46,21 @@
         </div>
       </div>
       <div class="recipes-grid">
-        <div class="recipe-card" data-id="1">
+        <div class="recipe-card local-recipe-card" data-id="1">
           <div class="recipe-image img-brownie"></div>
           <div class="recipe-info">
             <h3>Brownie</h3>
             <p>El pecado favorito de los amantes del chocolate: intenso, húmedo y con esa costrita crujiente que enamora.</p>
           </div>
         </div>
-        <div class="recipe-card" data-id="2">
+        <div class="recipe-card local-recipe-card" data-id="2">
           <div class="recipe-image img-bizcocho"></div>
           <div class="recipe-info">
             <h3>Bizcocho</h3>
             <p>La esencia de la merienda casera; una nube esponjosa con aroma a vainilla y recuerdos de infancia.</p>
           </div>
         </div>
-        <div class="recipe-card" data-id="3">
+        <div class="recipe-card local-recipe-card" data-id="3">
           <div class="recipe-image img-donas"></div>
           <div class="recipe-info">
             <h3>Mini Donas</h3>
@@ -244,17 +244,39 @@
       <div class="custom-recipes-container">
         <div class="custom-recipes-header">
           <h2>Mis Creaciones con Amor</h2>
-          <p>Agrega, consulta y elimina tus propias recetas almacenadas en nuestra base de datos SQLite.</p>
+          <p>Agrega y administra tus propias recetas en nuestra página. Aparecerán listadas y listas para buscarse en la rejilla de recetas superior.</p>
         </div>
         
-        <div class="custom-recipes-layout">
-          <div class="recipe-form-container">
+        <div class="custom-recipes-layout" style="display: flex; justify-content: center;">
+          <div class="recipe-form-container" style="width: 100%; max-width: 700px;">
             <h3>Agregar Nueva Receta</h3>
             <form id="add-recipe-form">
               <div class="form-group">
                 <label for="recipe-title">Título de la receta</label>
                 <input type="text" id="recipe-title" required placeholder="Ej. Tarta de Fresa">
               </div>
+              
+              <div class="form-group" id="recipe-image-section">
+                <div id="recipe-image-preview-container" style="display: none; margin-bottom: 1rem; text-align: center;">
+                  <p style="font-weight: bold; font-size: 1.4rem; margin-bottom: 0.5rem;"><i class="fa-solid fa-circle-info"></i> Imagen de TheMealDB detectada:</p>
+                  <img id="recipe-image-preview" src="" alt="Vista previa" style="max-height: 150px; border-radius: 12px; border: 3px solid var(--text-brown); box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                  <div>
+                    <button type="button" id="btn-change-image" class="btn-submit" style="display: inline-block; width: auto; font-size: 1.3rem; padding: 0.5rem 1rem; margin-top: 0.5rem; background-color: var(--text-brown);">Subir otra imagen o URL</button>
+                  </div>
+                </div>
+                
+                <div id="manual-image-inputs" style="display: block;">
+                  <label><i class="fa-regular fa-image"></i> Imagen de la receta (Opcional)</label>
+                  <div style="display: flex; flex-direction: column; gap: 0.8rem;">
+                    <input type="text" id="recipe-image-url" placeholder="Pega la URL de la imagen (ej. https://...)">
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                      <span style="font-size: 1.4rem; font-weight: bold;">O sube un archivo:</span>
+                      <input type="file" id="recipe-image-file" accept="image/*" style="font-size: 1.3rem; padding: 0.4rem; border: none; background: transparent;">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
               <div class="form-row">
                 <div class="form-group">
                   <label for="recipe-time">Tiempo de Prep. (min)</label>
@@ -279,13 +301,6 @@
               </div>
               <button type="submit" class="btn-submit">Guardar</button>
             </form>
-          </div>
-          
-          <div class="custom-recipes-list-col">
-            <h3>Recetas Guardadas en BD</h3>
-            <div id="custom-recipes-list" class="custom-recipes-grid">
-              <!-- Cargado dinámicamente -->
-            </div>
           </div>
         </div>
       </div>

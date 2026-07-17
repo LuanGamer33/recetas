@@ -863,8 +863,8 @@ a {
 }
 
 .custom-recipe-card {
-  background-color: var(--bg-brown);
-  color: var(--bg-cream);
+  background-color: var(--bg-cream);
+  color: var(--text-brown);
   border-radius: 20px;
   padding: 1.5rem;
   position: relative;
